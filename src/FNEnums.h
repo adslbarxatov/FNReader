@@ -92,6 +92,9 @@ enum TLVTags
 	{
 	// Теги ФФД 1.0
 
+	// Номер фискального документа (1040)
+	FiscalDocumentNumber = 0x0410,
+
 	// Имя кассира (1021)
 	CashierName = 0x03FD,
 

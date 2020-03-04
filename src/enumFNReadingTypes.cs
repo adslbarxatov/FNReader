@@ -15,14 +15,14 @@
 		/// </summary>
 		FSD_4_0 = 1,
 
-		/// <summary>
+		/*/// <summary>
 		/// Дамп ФН старой версии
 		/// </summary>
-		FNDump_3_2 = 2,
+		FNDump_3_2 = 2,*/
 
 		/// <summary>
 		/// Дамп ФН из программы FNArc
 		/// </summary>
-		FNC_1_2_0_1 = 3
+		FNC_1_2_0_1 = 2
 		}
 	}
