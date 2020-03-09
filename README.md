@@ -85,185 +85,180 @@
 Список поддерживаемых TLV-тегов:
 
 ```
+	// Стандартные теги
 
-// Теги ФФД 1.0
+	// Флаг работы в составе автоматического устройства расчётов (1001)
+	AutomaticFlag = 0x03E9,
 
-// Номер фискального документа (1040)
-FiscalDocumentNumber = 0x0410,
+	// Флаг автономного режима (1002)
+	AutonomousFlag = 0x03EA,
 
-// Имя кассира (1021)
-CashierName = 0x03FD,
+	// E-mail/телефон покупателя (1008)
+	ClientAddress = 0x03F0,
 
-// Имя пользователя (1048)
-UserName = 0x0418,
+	// Адрес расчётов (1009)
+	RegistrationAddress = 0x03F1,
 
-// Адрес расчётов (1009)
-RegistrationAddress = 0x03F1,
+	// Дата и время документа (1012)
+	DocumentDateTime = 0x03F4,
 
-// ИНН ОФД (1017)
-OFD_INN = 0x03F9,
+	// Заводской номер ККТ (1013)
+	RegisterSerialNumber = 0x03F5,
 
-// Заводской номер ККТ (1013)
-RegisterSerialNumber = 0x03F5,
+	// ИНН ОФД (1017)
+	OFD_INN = 0x03F9,
 
-// Сумма наличными (1031)
-RealCashValue = 0x0407,
+	// ИНН пользователя (1018)
+	UserINN = 0x03FA,
 
-// Сумма электронными (1081)
-ElectronicCashValue = 0x0439,
+	// Сумма расчёта (1020)
+	OperationSumma = 0x03FC,
 
-// Название предмета расчёта (1059)
-PaymentObject = 0x0423,
+	// Имя кассира (1021)
+	CashierName = 0x03FD,
 
-// Заводской номер ФН (1041)
-FNSerialNumber = 0x0411,
+	// Количество товара (1023)
+	GoodsCount = 0x03FF,
 
-// Регистрационный номер ККТ (1037)
-RegistrationNumber = 0x040D,
+	// Наименование предмета расчёта (1030)
+	GoodName = 0x0406,
 
-// ИНН пользователя (1018)
-UserINN = 0x03FA,
+	// Сумма наличными (1031)
+	RealCashValue = 0x0407,
 
-// Флаг шифрования (1056)
-EncryptionFlag = 0x0420,
+	// Номер автомата (терминала) (1036)
+	TerminalNumber = 0x040C,
 
-// Флаг автономного режима (1002)
-AutonomousFlag = 0x03EA,
+	// Регистрационный номер ККТ (1037)
+	RegistrationNumber = 0x040D,
 
-// Флаг работы в составе автоматического устройства расчётов (1001)
-AutomaticFlag = 0x03E9,
+	// Номер смены, в которой создан документ (1038)
+	SessionNumber = 0x040E,
 
-// Флаг режима услуг (1109)
-ServiceFlag = 0x0455,
+	// Номер фискального документа (1040)
+	FiscalDocumentNumber = 0x0410,
 
-// Флаг формирования БСО (1110)
-BlankFlag = 0x0456,
+	// Заводской номер ФН (1041)
+	FNSerialNumber = 0x0411,
 
-// Флаг работы в сети Интернет (1108)
-InternetFlag = 0x0454,
+	// Имя пользователя (1048)
+	UserName = 0x0418,
 
-// Флаги систем налогообложения (1062)
-TaxFlags = 0x0426,
+	// Признак расчёта (1054)
+	OperationType = 0x041E,
 
-// Номер смены, в которой создан документ (1038)
-SessionNumber = 0x040E,
+	// Применённая СНО (1055)
+	AppliedTaxSystem = 0x041F,
 
-// Наименование предмета расчёта (1030)
-GoodName = 0x0406,
+	// Флаг шифрования (1056)
+	EncryptionFlag = 0x0420,
 
-// Стоимость единицы товара (1079)
-ItemCost = 0x0437,
+	// Название предмета расчёта (1059)
+	PaymentObject = 0x0423,
 
-// Количество товара (1023)
-GoodsCount = 0x03FF,
+	// Флаги систем налогообложения (1062)
+	TaxFlags = 0x0426,
 
-// Теги ФФД 1.05
+	// Фискальный признак документа (1077)
+	FiscalSignature = 0x0435,
 
-// ИНН кассира (1203)
-CashierINN = 0x04B3,
+	// Фискальный признак сообщения (квитанция, 1078)
+	FiscalConfirmation = 0x0436,
 
-// Версия формата фискальных документов (1209)
-FFDVersion = 0x04B9,
+	// Стоимость единицы товара (1079)
+	ItemCost = 0x0437,
 
-// E-mail/телефон покупателя (1008)
-ClientAddress = 0x03F0,
+	// Сумма электронными (1081)
+	ElectronicCashValue = 0x0439,
 
-// Место расчётов (1187)
-RegistrationPlace = 0x04A3,
+	// Причина перерегистрации (1101)
+	RegistrationChangeCause = 0x044D,
 
-// Теги файлов архивов ФН
+	// Флаг работы в сети Интернет (1108)
+	InternetFlag = 0x0454,
 
-// Фискальный документ (автономный режим, 65001)
-FNA_AutonomousArray = 0xFDE9,
+	// Флаг режима услуг (1109)
+	ServiceFlag = 0x0455,
 
-// Фискальный документ (режим передачи данных, 65002)
-FNA_OFDArray = 0xFDEA,
+	// Флаг формирования БСО (1110)
+	BlankFlag = 0x0456,
 
-// Фискальный документ (автономный режим, ФФД 1.1, 65011)
-FNA_AutonomousArray_1_1 = 0xFDF3,
+	// Код товарной позиции (код маркировки) (1162)
+	GoodCode = 0x048A,
 
-// Фискальный документ (режим передачи данных, ФФД 1.1, 65012)
-FNA_OFDArray_1_1 = 0xFDF4,
+	// Место расчётов (1187)
+	RegistrationPlace = 0x04A3,
 
-// Отчёт о регистрации
-FNA_Registration = Registration + 100,
+	// Флаг азартных игр (1193)
+	GamesFlag = 0x04A9,
 
-// Отчёт об изменении реквизитов регистрации
-FNA_RegistrationChange = RegistrationChange + 100,
+	// Ставка НДС (1199)
+	NDS = 0x04AF,
 
-// Открытие смены
-FNA_OpenSession = OpenSession + 100,
+	// ИНН кассира (1203)
+	CashierINN = 0x04B3,
 
-// Отчёт о текущем состоянии расчётов
-FNA_CurrentState = CurrentState + 100,
+	// Флаг подакцизных товаров (1207)
+	ExciseFlag = 0x04B7,
 
-// Кассовый чек
-FNA_Bill = Bill + 100,
+	// Версия формата фискальных документов (1209)
+	FFDVersion = 0x04B9,
 
-// Чек коррекции
-FNA_CorrectionBill = CorrectionBill + 100,
+	// Признак предмета расчёта (1212)
+	ResultObject = 0x04BC,
 
-// БСО
-FNA_Blank = Blank + 100,
+	// Признак способа расчёта (1214)
+	ResultMethod = 0x04BE,
 
-// БСО коррекции
-FNA_CorrectionBlank = CorrectionBlank + 100,
+	// Теги файлов архивов ФН
 
-// Закрытие смены
-FNA_CloseSession = CloseSession + 100,
+	// Отчёт о регистрации
+	FNA_Registration = Registration + 100,
 
-// Закрытие фискального режима
-FNA_CloseFiscalStorage = CloseFiscalStorage + 100,
+	// Отчёт об изменении реквизитов регистрации
+	FNA_RegistrationChange = RegistrationChange + 100,
 
-// Подтверждение оператора
-FNA_Confirmation = Confirmation + 100,
+	// Открытие смены
+	FNA_OpenSession = OpenSession + 100,
 
-// Тег, сообщающий о внутренней ошибке ФН при считывании
-ReadingFailure = 9999,
+	// Отчёт о текущем состоянии расчётов
+	FNA_CurrentState = CurrentState + 100,
 
-// Расширенные теги 1.0 и 1.05
+	// Кассовый чек
+	FNA_Bill = Bill + 100,
 
-// Номер автомата (терминала) (1036)
-TerminalNumber = 0x040C,
+	// Чек коррекции
+	FNA_CorrectionBill = CorrectionBill + 100,
 
-// Дата и время документа (1012)
-DocumentDateTime = 0x03F4,
+	// БСО
+	FNA_Blank = Blank + 100,
 
-// Фискальный признак документа (1077)
-FiscalSignature = 0x0435,
+	// БСО коррекции
+	FNA_CorrectionBlank = CorrectionBlank + 100,
 
-// Причина перерегистрации (1101)
-RegistrationChangeCause = 0x044D,
+	// Закрытие смены
+	FNA_CloseSession = CloseSession + 100,
 
-// Фискальный признак сообщения (квитанция, 1078)
-FiscalConfirmation = 0x0436,
+	// Закрытие фискального режима
+	FNA_CloseFiscalStorage = CloseFiscalStorage + 100,
 
-// Признак расчёта (1054)
-OperationType = 0x041E,
+	// Подтверждение оператора
+	FNA_Confirmation = Confirmation + 100,
 
-// Сумма расчёта (1020)
-OperationSumma = 0x03FC,
+	// Фискальный документ (автономный режим, 65001)
+	FNA_AutonomousArray = 0xFDE9,
 
-// Применённая СНО (1055)
-AppliedTaxSystem = 0x041F,
+	// Фискальный документ (режим передачи данных, 65002)
+	FNA_OFDArray = 0xFDEA,
 
-// Код товарной позиции (код товара, код маркировки) (1162)
-GoodCode = 0x048A,
+	// Фискальный документ (автономный режим, ФФД 1.1, 65011)
+	FNA_AutonomousArray_1_1 = 0xFDF3,
 
-// Флаг азартных игр (1193)
-GamesFlag = 0x04A9,
+	// Фискальный документ (режим передачи данных, ФФД 1.1, 65012)
+	FNA_OFDArray_1_1 = 0xFDF4,
 
-// Флаг подакцизных товаров (1207)
-ExciseFlag = 0x04B7,
-
-// Признак предмета расчёта (1212)
-ResultObject = 0x04BC,
-
-// Признак способа расчёта (1214)
-ResultMethod = 0x04BE,
-
-// Ставка НДС (1199)
-NDS = 0x04AF
+	// Тег, сообщающий о внутренней ошибке ФН при считывании
+	ReadingFailure = 9999,
 
 ```
 
