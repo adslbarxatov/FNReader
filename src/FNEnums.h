@@ -41,7 +41,7 @@ enum FNDocumentTypes
 	};
 
 // Возможные фазы жизни ФН
-enum FNLifePhases									
+enum FNLifePhases
 	{
 	// Технологический режим
 	FactoryMode = 0x00,
@@ -59,11 +59,11 @@ enum FNLifePhases
 	ArchiveClosed = 0x0F,
 
 	// Неизвестный режим
-	UnknownMode = 255
+	UnknownMode = -1
 	};
 
 // Возможные результаты общения с COM-портом
-enum SendAndReceiveResults							
+enum SendAndReceiveResults
 	{
 	// Успешно
 	Ok = 0,
@@ -136,7 +136,7 @@ enum TLVTags
 	// Заводской номер ККТ (1013)
 	RegisterSerialNumber = 0x03F5,
 
-	#define PROC_REGISTERSERIALNUMBER	"%s  Заводской номер ККТ: %s\r\n"
+	#define PROC_REGISTERSERIALNUMBER	"%s  Заводской номер ККТ: %s (ККТ %s)\r\n"
 
 	// ИНН ОФД (1017)
 	OFD_INN = 0x03F9,
