@@ -1,4 +1,4 @@
-﻿namespace FNReader
+﻿namespace RD_AAOW
 	{
 	/// <summary>
 	/// Возможные режимы считывания данных ФН
@@ -15,14 +15,14 @@
 		/// </summary>
 		FSD_4_0 = 1,
 
-		/*/// <summary>
-		/// Дамп ФН старой версии
-		/// </summary>
-		FNDump_3_2 = 2,*/
-
 		/// <summary>
 		/// Дамп ФН из программы FNArc
 		/// </summary>
 		FNC_1_2_0_1 = 2
+
+		/*/// <summary>
+		/// Дамп ФН старой версии
+		/// </summary>
+		FNDump_3_2 = 2,*/
 		}
 	}

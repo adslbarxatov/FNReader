@@ -1,4 +1,4 @@
-﻿namespace FNReader
+﻿namespace RD_AAOW
 	{
 	/// <summary>
 	/// Возможные кассовые операции
