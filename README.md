@@ -81,7 +81,7 @@
 постоянного соответствия программы актуальным изменениям в ФФД. Срок указан в заголовке окна приложения. По его истечении
 необходимо получить новый экземпляр приложения для продолжения работы
 
-## Политика разработки приложения и EULA
+## Политика разработки приложений и EULA
 
 This [Policy (ADP)](https://vk.com/@rdaaow_fupl-adp), its positions, conclusion, EULA and application methods
 describes general rules that we follow in all of our development processes, released applications and implemented
