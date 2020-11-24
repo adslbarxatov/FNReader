@@ -36,6 +36,18 @@ enum FNDocumentTypes
 	// Подтверждение оператора
 	Confirmation = 7,
 
+	// Запрос о коде маркировки
+	MarkCodeRequest = 81,
+
+	// Уведомление о реализации кода маркировки
+	MarkCodeNotification = 82,
+
+	// Ответ на запрос о коде маркировки
+	MarkCodeRequestAnswer = 83,
+
+	// Ответ на уведомление о реализации кода маркировки
+	MarkCodeNotificationAnswer = 84,
+
 	// Неизвестный тип документа
 	UnknownType = 255
 	};

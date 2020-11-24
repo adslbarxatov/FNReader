@@ -61,6 +61,26 @@
 		Confirmation = 7,
 
 		/// <summary>
+		/// Запрос о коде маркировки
+		/// </summary>
+		MarkCodeRequest = 81,
+
+		/// <summary>
+		/// Уведомление о реализации кода маркировки
+		/// </summary>
+		MarkCodeNotification = 82,
+
+		/// <summary>
+		/// Ответ на запрос о коде маркировки
+		/// </summary>
+		MarkCodeRequestAnswer = 83,
+
+		/// <summary>
+		/// Ответ на уведомление о реализации кода маркировки
+		/// </summary>
+		MarkCodeNotificationAnswer = 84,
+
+		/// <summary>
 		/// Неизвестный тип документа
 		/// </summary>
 		UnknownType = 255
